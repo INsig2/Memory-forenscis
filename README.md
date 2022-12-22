@@ -1,6 +1,10 @@
 # Memory-forenscis
 
-This is a tutorial that will explain how to create a custom Volatiltiy 2 profile for ANY version of Windows, including the latest versio of Win 11 22H2. Unless things change drastically, the process should work for future versions as well.
+This is a tutorial that will explain how to create a custom Volatiltiy 2 profile for ANY version of Windows, including the latest versio of Win 11 22H2. Unless things change drastically, the process should work for future versions as well. 
+
+The process was created under INsig2 class Advanced RAM forensics. The steps below don't include every possible step, and does not provide the files need, but will hopefully help investigators create the proper profile. Specific knowledge on Python will be required! 
+
+If you are interested in the full tutorial and class that goes deeper into the RAM forenscis, please see our site for more info www.insig2.com 
 
 The process is as follows and consists of several steps and will need several things:
 
@@ -54,8 +58,6 @@ There are few more steps that wee need to do before we can use it
 *   BE CAREFUL not to include the \*.py extension in \_md\_vtype\_module
 *   Vol.py –-info and see if your new profile is there under Windows profiles
 
-NOTE: This new profile will still be under Win10 profiles - if you are working with later versions of Win eg. 11, 12, 13 they will be nested under Win10 but we dont care!
-
-If you go back to your volatility CMD or termina and rung vol.py --info you should see the new profile listed! 
+NOTE: This new profile will still be under Win10 profiles - if you are working with later versions of Win eg. 11, 12, 13 they will be nested under Win10 but we dont care! Volatiltiy will complain about not having 32bit equivalent profile, again we dont care as we dont need it. 
 
 Happy times!
