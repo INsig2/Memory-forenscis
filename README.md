@@ -62,4 +62,4 @@ NOTE: This new profile will still be under Win10 profiles - if you are working w
 
 Happy times!
 
-This tutorial was create by [https://twitter.com/sokre_haus](https://twitter.com/sokre_haus) feel free to reach out for any questions!
+This tutorial was created by [https://twitter.com/sokre_haus](https://twitter.com/sokre_haus) feel free to reach out for any questions!
