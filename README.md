@@ -61,3 +61,5 @@ There are few more steps that wee need to do before we can use it
 NOTE: This new profile will still be under Win10 profiles - if you are working with later versions of Win eg. 11, 12, 13 they will be nested under Win10 but we dont care! Volatiltiy will complain about not having 32bit equivalent profile, again we don't care as we don't need it. 
 
 Happy times!
+
+This tutorial was create by [https://twitter.com/sokre_haus](https://twitter.com/sokre_haus) feel free to reach out for any questions!
