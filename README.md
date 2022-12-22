@@ -1,4 +1,4 @@
-# How to create a custom Windows X Volatility 2 profile
+# How to create a custom Windows Volatility 2 profile
 
 This is a tutorial that will explain how to create a custom Volatility 2 profile for ANY version of Windows, including the latest version of Win 11 22H2. Unless things change drastically, the process should work for future versions as well. 
 
