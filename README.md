@@ -4,7 +4,7 @@ This is a tutorial that will explain how to create a custom Volatility 2 profile
 
 The process was created under INsig2 class Advanced RAM forensics. The steps below don't include every possible step, and does not provide the files need, but will hopefully help investigators create the proper profile. Specific knowledge on Python will be required! 
 
-If you are interested in the full tutorial and class that goes deeper into the RAM forenscis, please see our site for more info www.insig2.com 
+If you are interested in the full tutorial and class that goes deeper into the RAM forensics, please see our site for more info www.insig2.com 
 
 The process is as follows and consists of several steps and will need several things:
 
@@ -27,16 +27,16 @@ The process is as follows and consists of several steps and will need several th
     *   Located in C:\\Windows\\System32
 *   Install VCForPython27.msi 
 *   Install Pdbparse python 2 script
-*   Once you have everyting installed properyl
+*   Once you have everyting installed properly
     *   Copy the ntoskrnl.exe from your target system, to the examination system and run the following command
     *   `symchk.py -e <path to ntoskrnl.exe file>`
-    *   `pdb_tpi_vtypes.py ntkrnlmp.pdb > <output file>.txt`
+    *   `pdb_tpi_vtypes.py ntkrnlmp.pdb > <output file>.py`
 
-The resulting .txt file is actually our volatility 2 profile!
+The resulting .py file is actually our volatility 2 profile!
 
 There are few more steps that wee need to do before we can use it
 
-*   Rename the dump.txt to the corresponding Windows version with suggested format:
+*   Rename the \*.py file to the corresponding Windows version with suggested format:
     *   win\<XX>\_x64\_\<XXXXXX>\_vtypes.py
         *   \<XX> 10, 11, 12?
         *   \<XXXXX> would be smart to make it specific minor Windows version e.g. 19044 or something similar - please see [https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions](https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions)
@@ -58,6 +58,6 @@ There are few more steps that wee need to do before we can use it
 *   BE CAREFUL not to include the \*.py extension in \_md\_vtype\_module
 *   Vol.py –-info and see if your new profile is there under Windows profiles
 
-NOTE: This new profile will still be under Win10 profiles - if you are working with later versions of Win eg. 11, 12, 13 they will be nested under Win10 but we dont care! Volatiltiy will complain about not having 32bit equivalent profile, again we dont care as we dont need it. 
+NOTE: This new profile will still be under Win10 profiles - if you are working with later versions of Win eg. 11, 12, 13 they will be nested under Win10 but we dont care! Volatiltiy will complain about not having 32bit equivalent profile, again we don't care as we don't need it. 
 
 Happy times!
