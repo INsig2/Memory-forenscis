@@ -1,6 +1,6 @@
-# Memory-forenscis
+# How to create a custom Windows X Volatility 2 profile
 
-This is a tutorial that will explain how to create a custom Volatiltiy 2 profile for ANY version of Windows, including the latest versio of Win 11 22H2. Unless things change drastically, the process should work for future versions as well. 
+This is a tutorial that will explain how to create a custom Volatility 2 profile for ANY version of Windows, including the latest version of Win 11 22H2. Unless things change drastically, the process should work for future versions as well. 
 
 The process was created under INsig2 class Advanced RAM forensics. The steps below don't include every possible step, and does not provide the files need, but will hopefully help investigators create the proper profile. Specific knowledge on Python will be required! 
 
