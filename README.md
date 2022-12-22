@@ -43,7 +43,7 @@ There are few more steps that wee need to do before we can use it
         “…\\volatility-master\\volatility\\plugins\\overlays\\windows\\win10.py“
     *   Open the file with text editor
     *   Scroll all the way to the end
-    *   We will copy and paste the last class and use it as our template for the new profile 
+    *   We will copy and paste the last class and use it as our template for the new profile
 *   Last thing we need is to modify the win10.py
     *   We will modify the last class to match the profile and filename we just created
 
@@ -53,3 +53,9 @@ There are few more steps that wee need to do before we can use it
 *   Save and verify by running in CMD
 *   BE CAREFUL not to include the \*.py extension in \_md\_vtype\_module
 *   Vol.py –-info and see if your new profile is there under Windows profiles
+
+NOTE: This new profile will still be under Win10 profiles - if you are working with later versions of Win eg. 11, 12, 13 they will be nested under Win10 but we dont care!
+
+If you go back to your volatility CMD or termina and rung vol.py --info you should see the new profile listed! 
+
+Happy times!
