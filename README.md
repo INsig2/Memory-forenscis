@@ -6,7 +6,7 @@ The process was created under INsig2 class Advanced RAM forensics. The steps bel
 
 If you are interested in the full tutorial and class that goes deeper into the RAM forensics, please see our site for more info www.insig2.com 
 
-The process is as follows and consists of several steps and will need several things:
+# The process is as follows and consists of several steps and will need several things:
 
 **Things needed:**
 
