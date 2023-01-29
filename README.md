@@ -30,7 +30,7 @@ If you are interested in the full tutorial and class that goes deeper into the R
 *   Install VCForPython27.msi 
 *   Install Pdbparse python 2 script
 *   Once you have everything installed properly
-    *   Copy the ntoskrnl.exe from your target system, to the examination system and run the following command
+    *   Copy the ntoskrnl.exe from your target system, to the examination system and run the following command form Pdbparse you downloaded before
     *   `symchk.py -e <path to ntoskrnl.exe file>`
     *   `pdb_tpi_vtypes.py ntkrnlmp.pdb > <output file>.py`
 
@@ -54,10 +54,10 @@ There are few more steps that wee need to do before we can use it
 
 ![](https://user-images.githubusercontent.com/121233698/209137348-526afe44-8d51-466a-a0c5-1ca5951b1d63.png)
 
-   *   Eg – set all to Win10 x64 19044
-   *   Save and verify by running in CMD
-   *   BE CAREFUL not to include the \*.py extension in \_md\_vtype\_module
-   *   Vol.py –-info and see if your new profile is there under Windows profiles
+*   Eg – set all to Win10 x64 19044
+*   Save and verify by running in CMD
+*   BE CAREFUL not to include the \*.py extension in \_md\_vtype\_module
+*   Vol.py –-info and see if your new profile is there under Windows profiles
 
 NOTE: This new profile will still be under Win10 profiles - if you are working with later versions of Win eg. 11, 12, 13 they will be nested under Win10, but we dont care! In addition, Volatility will complain about not having 32bit equivalent profile, again we don't care as we don't need it. 
 
