@@ -42,6 +42,7 @@ There are few more steps that wee need to do before we can use it
     *   win\<XX>\_x64\_\<XXXXXX>\_vtypes.py
         *   \<XX> 10, 11, 12?
         *   \<XXXXX> would be smart to make it specific minor Windows version e.g. 19044 or something similar - please see [https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions](https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions)
+        *   The format is MANDATORY as it will not be read properly in Volatility
 *   The Win\<XX>\_x64\_\<XXXXXX>\_vtypes.py goes with its friends in “...volatility-master\\volatility\\plugins\\overlays\\windows”
     *   You will see in a bit why...
 *   Last thing we need is to modify the win10.py 
@@ -51,6 +52,7 @@ There are few more steps that wee need to do before we can use it
     *   Scroll all the way to the end
     *   We will copy and paste the last class and use it as our template for the new profile
     *   We will modify the last class to match the profile and filename we just created
+    *   MAKE SURE EVERYTHING MATCHES UP!
 
 ![](https://user-images.githubusercontent.com/121233698/209137348-526afe44-8d51-466a-a0c5-1ca5951b1d63.png)
 
